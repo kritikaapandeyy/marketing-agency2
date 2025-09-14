@@ -838,3 +838,40 @@ section {
         width: 100%;
     }
 }
+.nav-side-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.nav-left-image {
+    margin-right: auto;
+}
+
+.nav-right-image {
+    margin-left: auto;
+}
+
+/*  Updated nav-container to accommodate side images */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+/*  Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .nav-side-image {
+        height: 32px;
+    }
+    
+    .nav-right-image {
+        display: none; /* Hide right image on mobile to save space */
+    }
+}
