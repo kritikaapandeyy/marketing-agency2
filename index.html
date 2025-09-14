@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency - Transform Your Business</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/abstract-tech-logo-1XrmcCiLxXI0JTJF3hbl7oLNfUEDXW.png" alt="Agency Logo" class="nav-logo">
+                <span class="nav-title">DigitalBoost</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#business-info" class="nav-link">Get Started</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#statistics" class="nav-link">Results</a>
+                <a href="#clients" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Business with Data-Driven Marketing</h1>
+                <p class="hero-subtitle">We help ambitious companies scale their revenue through strategic digital marketing campaigns that deliver measurable results.</p>
+                <div class="hero-buttons">
+                    <a href="#business-info" class="btn btn-primary">Get Free Strategy Call</a>
+                    <a href="#packages" class="btn btn-secondary">View Our Packages</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">300%</div>
+                    <div class="stat-label">Average ROI</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Leads Generated</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Campaigns Launched</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Info Section -->
+    <section id="business-info" class="business-info">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tell Us About Your Business</h2>
+                <p class="section-subtitle">Help us understand your goals so we can create a customized marketing strategy for your success.</p>
+            </div>
+            <form class="business-form" id="businessForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" id="companyName" name="companyName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <select id="industry" name="industry" required>
+                            <option value="">Select your industry</option>
+                            <option value="technology">Technology</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="finance">Finance</option>
+                            <option value="retail">Retail</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website URL</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Monthly Marketing Budget</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Select budget range</option>
+                            <option value="under-5k">Under $5,000</option>
+                            <option value="5k-15k">$5,000 - $15,000</option>
+                            <option value="15k-50k">$15,000 - $50,000</option>
+                            <option value="over-50k">Over $50,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="goals">Primary Marketing Goals</label>
+                    <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your main objectives, target audience, and what success looks like for your business..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Get My Custom Strategy</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Growth Package</h2>
+                <p class="section-subtitle">Scalable marketing solutions designed to fit your business needs and budget.</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Starter</h3>
+                        <div class="package-price">$2,999<span>/month</span></div>
+                        <p class="package-description">Perfect for small businesses ready to establish their digital presence</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Social Media Management (3 platforms)</li>
+                        <li>Content Creation (8 posts/month)</li>
+                        <li>Basic SEO Optimization</li>
+                        <li>Monthly Performance Report</li>
+                        <li>Email Marketing Setup</li>
+                        <li>Google My Business Optimization</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+                <div class="package-card package-featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3 class="package-name">Growth</h3>
+                        <div class="package-price">$5,999<span>/month</span></div>
+                        <p class="package-description">Comprehensive marketing for businesses ready to scale rapidly</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Everything in Starter</li>
+                        <li>Google Ads Management ($2k ad spend)</li>
+                        <li>Facebook & Instagram Ads</li>
+                        <li>Advanced SEO & Content Marketing</li>
+                        <li>Landing Page Creation</li>
+                        <li>CRM Integration & Lead Nurturing</li>
+                        <li>Bi-weekly Strategy Calls</li>
+                        <li>Conversion Rate Optimization</li>
+                    </ul>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">Premium</h3>
+                        <div class="package-price">$12,999<span>/month</span></div>
+                        <p class="package-description">Enterprise-level marketing for maximum growth and market domination</p>
+                    </div>
+                    <ul class="package-features">
+                        <li>Everything in Growth</li>
+                        <li>Multi-Channel Ad Management ($10k+ spend)</li>
+                        <li>Advanced Marketing Automation</li>
+                        <li>Custom Dashboard & Analytics</li>
+                        <li>Dedicated Account Manager</li>
+                        <li>Weekly Strategy Sessions</li>
+                        <li>A/B Testing & Optimization</li>
+                        <li>Priority Support & Implementation</li>
+                    </ul>
+                    <button class="btn btn-outline">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proven Results That Speak for Themselves</h2>
+                <p class="section-subtitle">Our data-driven approach consistently delivers exceptional outcomes for our clients.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Average ROI Increase</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-suffix">K+</div>
+                    <div class="stat-label">Qualified Leads Generated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-target="95">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Client Satisfaction Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Successful Campaigns</div>
+                </div>
+            </div>
+            <div class="charts-container">
+                <div class="chart-card">
+                    <h3>Success Distribution</h3>
+                    <canvas id="pieChart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h3>ROI Growth Over Time</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real stories from businesses that transformed their growth with our marketing expertise.</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-carousel" id="testimonialCarousel">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"DigitalBoost transformed our online presence completely. Within 6 months, we saw a 400% increase in qualified leads and our revenue doubled. Their strategic approach and attention to detail is unmatched."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-name">Sarah Johnson</div>
+                                    <div class="author-title">CEO, TechStart Solutions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"The ROI we've achieved with DigitalBoost is incredible. They helped us scale from $50K to $500K in annual revenue through targeted campaigns and conversion optimization. Best investment we've made."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-name">Michael Chen</div>
+                                    <div class="author-title">Founder, EcoLife Products</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"Working with DigitalBoost has been a game-changer. Their data-driven approach helped us reduce customer acquisition costs by 60% while tripling our conversion rates. Exceptional results!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-name">Emily Rodriguez</div>
+                                    <div class="author-title">Marketing Director, HealthPlus</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">"The team at DigitalBoost doesn't just execute campaigns - they become true partners in your growth. Their strategic insights and creative solutions helped us dominate our market."</p>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <div class="author-name">David Thompson</div>
+                                    <div class="author-title">VP Marketing, InnovateCorp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevBtn">‹</button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="nextBtn">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/abstract-tech-logo-1XrmcCiLxXI0JTJF3hbl7oLNfUEDXW.png" alt="Agency Logo" class="footer-logo">
+                        <span class="footer-title">DigitalBoost</span>
+                    </div>
+                    <p class="footer-description">Transforming businesses through data-driven digital marketing strategies that deliver measurable results and sustainable growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">📷</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Digital Marketing Strategy</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Google Ads Management</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">Content Marketing</a></li>
+                        <li><a href="#">Conversion Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-heading">Get Started</h3>
+                    <p class="footer-text">Ready to transform your business? Subscribe to our newsletter for marketing insights and exclusive offers.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>📧 hello@digitalboost.com</p>
+                        <p>📞 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DigitalBoost. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
